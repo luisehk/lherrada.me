@@ -16,8 +16,8 @@ body {
 	overflow-x: hidden;
 
 	padding-top: 28px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
 
 	text-align: center;
 	font-style: normal;
@@ -66,6 +66,11 @@ body {
 	margin: 0;
 }
 
+.main h4 {
+	margin: 0;
+	margin-bottom: 7px;
+}
+
 .main .main-title {
 	font-weight: bold;
 	font-size: 36px;
@@ -75,4 +80,42 @@ body {
 
 .main .content {
 
+}
+
+.row {
+	margin: 0;
+	margin-left: -14px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column  {
+	float: left;
+	width: 31%;
+	padding: 14px;
+}
+
+.card {
+	background: #FFFFFF;
+}
+
+.card .thumbnail {
+	width: 100%;
+	max-height: 150px;
+}
+
+.card .container {
+	padding: 14px;
+}
+
+.card .container .title {
+	font-size: 16px;
+}
+
+.card .container .description {
+	font-size: 14px;
 }
