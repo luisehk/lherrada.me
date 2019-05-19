@@ -114,19 +114,21 @@ body {
 	padding: 14px;
 }
 
+.card .container-big {
+	padding: 28px;
+}
+
 .card .container .title {
 	font-size: 16px;
 }
 
 .card .container .description {
 	margin-bottom: 14px;
-
 	font-size: 14px;
 }
 
 .card .container .details {
 	font-size: 12px;
-	line-height: 16px;
 }
 
 .card .container .category {
