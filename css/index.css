@@ -1,5 +1,6 @@
 body {
 	max-width: 2000px;
+	margin: 0;
 	background-color: #F5F0EE;
 	font-family: 'Mada', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -48,7 +49,15 @@ body {
 }
 
 .links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
 	font-size: 20px;
+}
+
+.links li {
+	margin-bottom: 18px;
 }
 
 .links a {
@@ -197,7 +206,38 @@ body {
 
 @media screen and (max-width: 650px) {
 	.sidebar {
+		position: relative;
+		height: auto;
+		width: auto;
+		padding: 18px;
+
+		text-align: left;
+		font-style: normal;
+		font-weight: normal;
+		background-color: #393B5B;
+		color: #FFFFFF;
+	}
+
+	.sidebar .profile {
+		margin-bottom: 9px;
+	}
+
+	.sidebar .profile .name {
+		margin-bottom: 0px;
+	}
+
+	.sidebar .profile .pic {
 		display: none;
+	}
+
+	.sidebar .profile .bio {
+		display: none;
+	}
+
+	.sidebar .links li {
+		float: left;
+		padding-right: 18px;
+		margin-bottom: 0px;
 	}
 
 	.main {
