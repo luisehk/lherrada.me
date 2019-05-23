@@ -59,6 +59,7 @@ body {
 .main {
 	padding-left: 256px;
 	padding-top: 36px;
+	padding-right: 18px;
 
 	color: #000000;
 }
@@ -95,6 +96,7 @@ body {
 .row {
 	margin: 0;
 	margin-left: -18px;
+    margin-right: -18px;
 }
 
 .row:after {
@@ -154,36 +156,51 @@ body {
 }
 
 .portfolio .p-row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .portfolio .p-column {
-  flex: 30%;
-  max-width: 30%;
-  padding: 0 4px;
+	flex: 30%;
+	max-width: 30%;
+	padding: 0 4px;
 }
 
 .portfolio .p-column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .portfolio .p-column {
-    flex: 100%;
-    max-width: 100%;
-  }
+@media screen and (max-width: 1200px) {
+	.portfolio .p-column {
+		flex: calc(50% - 36px);
+		max-width: calc(50% - 36px);
+	}
+
+	.column  {
+		width: calc(50% - 36px);
+	}
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .portfolio .p-column {
-    flex: 100%;
-    max-width: 100%;
-  }
+@media screen and (max-width: 900px) {
+	.portfolio .p-column {
+		flex: calc(100% - 36px);
+		max-width: calc(100% - 36px);
+	}
+
+	.column  {
+		width: calc(100% - 36px);
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.sidebar {
+		display: none;
+	}
+
+	.main {
+		padding-left: 18px;
+	}
 }
