@@ -18,18 +18,16 @@ const Layout = props => (
         href="/static/css/index.css"
         rel="stylesheet" />
 
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-141127632-1"></script>
+
       <script dangerouslySetInnerHTML={{__html: `
-        var _paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-          var u="//matomo.vordem.mx/";
-          _paq.push(['setTrackerUrl', u+'matomo.php']);
-          _paq.push(['setSiteId', '3']);
-          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141127632-1');
       `}} />
     </Head>
 
