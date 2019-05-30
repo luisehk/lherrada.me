@@ -65,39 +65,47 @@ var Layout = function Layout(props) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-    dangerouslySetInnerHTML: {
-      __html: "\n        var _paq = window._paq || [];\n        /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n        _paq.push(['trackPageView']);\n        _paq.push(['enableLinkTracking']);\n        (function() {\n          var u=\"//matomo.vordem.mx/\";\n          _paq.push(['setTrackerUrl', u+'matomo.php']);\n          _paq.push(['setSiteId', '3']);\n          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\n        })();\n      "
-    },
+    async: true,
+    src: "https://www.googletagmanager.com/gtag/js?id=UA-141127632-1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: "\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n\n        gtag('config', 'UA-141127632-1');\n      "
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "main-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 37
     },
     __self: this
   }, props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 38
     },
     __self: this
   }, props.children)));
