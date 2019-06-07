@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Sidebar = () => (
   <div className="sidebar">
     <div className="profile">
-      <img className="pic" src="/static/img/profile.jpg" />
+      <img className="pic" src="/static/img/pp.jpg" />
 
       <p className="name">Luis Herrada</p>
 
