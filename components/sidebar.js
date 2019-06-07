@@ -12,18 +12,18 @@ const Sidebar = () => (
 
     <ul className="links">
       <li>
-        <Link href="/">
-          <a>Blog</a>
+        <Link href="/about">
+          <a>About</a>
         </Link>
       </li>
       <li>
         <Link href="/work">
-          <a href="work.html">Work</a>
+          <a>Work</a>
         </Link>
       </li>
       <li>
-        <Link href="/about">
-          <a href="about.html">About</a>
+        <Link href="/blog">
+          <a>Blog</a>
         </Link>
       </li>
     </ul>
