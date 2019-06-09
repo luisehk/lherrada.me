@@ -21,8 +21,14 @@
   "homepage": "https://github.com/luisehk/herrada.me#readme",
   "description": "",
   "dependencies": {
+    "gray-matter": "^4.0.2",
     "next": "^8.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.0.8",
+    "webpack": "^4.33.0"
+  },
+  "devDependencies": {
+    "raw-loader": "^3.0.0"
   }
 }

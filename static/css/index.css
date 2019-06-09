@@ -65,6 +65,16 @@ body {
 	text-decoration: none;
 }
 
+.main a {
+  font-weight: bold;
+  color: #000000;
+}
+
+.block-link {
+  font-weight: normal !important;
+  text-decoration: none; !important;
+}
+
 .main {
 	padding-left: 256px;
 	padding-top: 36px;
@@ -80,11 +90,6 @@ body {
 .main h4 {
 	margin: 0;
 	margin-bottom: 18px;
-}
-
-.main a {
-	font-weight: bold;
-	color: #000000;
 }
 
 .main img {

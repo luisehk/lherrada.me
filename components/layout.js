@@ -2,14 +2,14 @@ import Head from 'next/head'
 import Sidebar from './sidebar'
 
 const Layout = props => (
-  <> 
+  <>
     <Head>
       <title>Luis Herrada | Software Engineer</title>
     	<meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta
-        http-equiv="X-UA-Compatible"
+        httpEquiv="X-UA-Compatible"
         content="ie=edge" />
       <link
         href="https://fonts.googleapis.com/css?family=Mada:200,300,400,500,600,700,900&display=swap"
