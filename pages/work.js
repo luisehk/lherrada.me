@@ -3,24 +3,26 @@ import Layout from '../components/layout'
 
 const Work = () => (
   <Layout title="Work">
-    
+
     <div className="card">
       <div className="container container-big">
         <h4 className="title">Portfolio</h4>
 
         <p className="description">
-          I’m a Software Engineer with a focus on digital products. You can see some of my consulting work here.
+          You can see some of my recent consulting work here.
+          Most of it was developed using Django, React, Postgresql and Docker
+          and is being used by real users right now.
         </p>
 
         <div className="portfolio">
 
-          <div className="p-row"> 
+          <div className="p-row">
             <div className="p-column">
 
               <a href="/static/img/portfolio/canou/00-canvas3-viability-Project-Full-Image-1.jpg" target="_blank">
                 <img src="/static/img/portfolio/canou/thumbs/00-canvas3-viability-Project-Full-Image-1.jpg" />
               </a>
-              
+
               <a href="/static/img/portfolio/canou/canou4.png" target="_blank">
                 <img src="/static/img/portfolio/canou/thumbs/canou4.png" />
               </a>
@@ -59,7 +61,7 @@ const Work = () => (
               <a href="/static/img/portfolio/santander/image9.png" target="_blank">
                 <img src="/static/img/portfolio/santander/thumbs/image9.png" />
               </a>
-              
+
             </div>
             <div className="p-column">
 

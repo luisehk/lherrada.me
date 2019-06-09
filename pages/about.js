@@ -3,15 +3,18 @@ import Layout from '../components/layout'
 
 const About = () => (
   <Layout title="About">
-    
+
     <div className="card">
 	    <div className="container container-big">
-      		<h4 className="title">Background</h4>
+    		<h4 className="title">Background</h4>
 
 	      <p className="description">
-          I’m a Software Engineer with a focus on digital products,
-          and I’m currently working <a href="https://vordem.io" target="_blank">at Vordem</a>.
-          I like to talk about Python, Linux, developer productivity, product management and web development.
+          I’m a Full Stack Engineer with 11+ years of experience
+          and I’m currently working <a href="https://vordem.io" target="_blank">at Vordem</a>, a digital product agency I founded in 2016.
+        </p>
+
+        <p className="description">
+          I like to talk about Python, Linux, web development, DevOps, CI/CD, technical leadership and product management.
         </p>
 
       	<h4 className="title">Interests</h4>
