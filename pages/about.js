@@ -21,7 +21,11 @@ const About = () => (
 
       	<p className="description">
           When I’m not working you’ll find me playing the guitar, reading, practicing chess, playing some starcraft
-          or spending time outside with my wife and/or friends. I’m also interested in education, business,
+          or spending time outside with my wife and/or friends.
+        </p>
+
+        <p className="description">
+          I’m also interested in education, business,
           astronomy, mental health and cooking.
         </p>
 
