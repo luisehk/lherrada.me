@@ -1,6 +1,6 @@
 import matter from 'gray-matter'
 
-const loadPosts = () => {
+export const loadPosts = () => {
   let loadedFiles = require.context(
     '../posts', true, /\.md$/)
 
@@ -34,6 +34,13 @@ const loadPosts = () => {
   return {
     posts
   }
+}
+
+export const truncateDescription = (description) => {
+  let limit = 150
+  description = description.substring(0, limit)
+  description = description.length == limit ? description.trim() + '...' : description
+  return description
 }
 
 export default loadPosts

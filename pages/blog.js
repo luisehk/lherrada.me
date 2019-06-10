@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
 import React from 'react'
-import loadPosts from '../tools/blog'
+import {loadPosts, truncateDescription} from '../tools/blog'
 
 
 class Blog extends React.Component {
@@ -27,7 +27,7 @@ class Blog extends React.Component {
                   <div className="container">
                     <h4 className="title">{data.title}</h4>
 
-                    <p className="description">{data.description}</p>
+                    <p className="description">{truncateDescription(data.description)}</p>
 
                     <span className="details">
                       {data.date}

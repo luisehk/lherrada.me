@@ -8,26 +8,29 @@ const About = () => (
 	    <div className="container container-big">
     		<h4 className="title">Background</h4>
 
-	      <p className="description">
-          I’m a Full Stack Engineer with 11+ years of experience
-          and I’m currently working <a href="https://vordem.io" target="_blank">at Vordem</a>, a digital product agency I founded in 2016.
-        </p>
+	      <div className="description">
+          <p>
+            I’m a Full Stack Engineer with 11+ years of experience
+            and I’m currently working <a href="https://vordem.io" target="_blank">at Vordem</a>,
+            a digital product agency I founded in 2016.
+          </p>
 
-        <p className="description">
-          I like to talk about Python, Linux, web development, DevOps, CI/CD, technical leadership and product management.
-        </p>
+          <p>
+            I like to talk about Python, Linux, web development, DevOps, CI/CD, technical leadership, tech consultancy and product management.
+          </p>
+        </div>
 
       	<h4 className="title">Interests</h4>
 
-      	<p className="description">
+      	<div className="description">
           When I’m not working you’ll find me playing the guitar, reading, practicing chess, playing some starcraft
           or spending time outside with my wife and/or friends.
-        </p>
+        </div>
 
-        <p className="description">
+        <div className="description">
           I’m also interested in education, business,
           astronomy, mental health and cooking.
-        </p>
+        </div>
 
       	<h4 className="title">Contact</h4>
 

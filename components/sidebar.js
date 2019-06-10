@@ -7,7 +7,7 @@ const Sidebar = props => (
 
       <p className="name">Luis Herrada</p>
 
-      <p className="bio">I’m a Software Engineer with a focus on digital products.</p>
+      <p className="bio">I’m a Full Stack Engineer with a focus on digital products.</p>
     </div>
 
     <ul className="links">
