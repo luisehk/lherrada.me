@@ -11,7 +11,7 @@ module.exports = {
     // but next.config.js doesnt support babel,
     // so we need to add posts manually
     const posts = [
-      {slug: 'hello-world'}
+      {slug: '01-just-start-and-keep-practicing'}
     ]
 
     // tranform the list of posts into a map of pages with the pathname `/post/:id`
