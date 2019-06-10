@@ -170,7 +170,7 @@ var Sidebar = function Sidebar(props) {
       lineNumber: 10
     },
     __self: this
-  }, "I\u2019m a Software Engineer with a focus on digital products.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, "I\u2019m a Full Stack Engineer with a focus on digital products.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "links",
     __source: {
       fileName: _jsxFileName,
@@ -35080,63 +35080,55 @@ function (_React$Component) {
         current: "blog",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 19
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "card",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 20
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container container-big",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
         className: "post-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 22
         },
         __self: this
       }, this.props.data.title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         className: "post-data",
         __source: {
           fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, this.props.data.date, " ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
           lineNumber: 27
         },
         __self: this
-      }, this.props.data.date, " | ", this.props.data.length, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }), "#", this.props.data.category), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
-        className: "post-thumbnail",
-        src: this.props.data.thumbnail,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }), this.props.data.length), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_12___default.a, {
         source: this.props.content,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 32
         },
         __self: this
       })))));
@@ -35153,16 +35145,15 @@ function (_React$Component) {
             switch (_context.prev = _context.next) {
               case 0:
                 query = _ref.query;
-                console.log('query', query);
-                _context.next = 4;
+                _context.next = 3;
                 return __webpack_require__("./posts lazy recursive ^\\.\\/.*\\.md$")("./".concat(query.id, ".md"));
 
-              case 4:
+              case 3:
                 post = _context.sent;
                 document = gray_matter__WEBPACK_IMPORTED_MODULE_11___default()(post.default);
                 return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, document));
 
-              case 7:
+              case 6:
               case "end":
                 return _context.stop();
             }
@@ -35193,8 +35184,8 @@ function (_React$Component) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./hello-world.md": [
-		"./posts/hello-world.md",
+	"./01-just-start-and-keep-practicing.md": [
+		"./posts/01-just-start-and-keep-practicing.md",
 		1
 	]
 };
@@ -35220,18 +35211,6 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 0:
-/*!*********************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js!./");
-
-
-/***/ }),
-
 /***/ 1:
 /*!********************!*\
   !*** fs (ignored) ***!
@@ -35240,6 +35219,18 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost&a
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+
+/***/ 2:
+/*!*********************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js!./");
+
 
 /***/ }),
 
@@ -35254,5 +35245,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=post.js.map

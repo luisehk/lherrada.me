@@ -170,7 +170,7 @@ var Sidebar = function Sidebar(props) {
       lineNumber: 10
     },
     __self: this
-  }, "I\u2019m a Software Engineer with a focus on digital products.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, "I\u2019m a Full Stack Engineer with a focus on digital products.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "links",
     __source: {
       fileName: _jsxFileName,
@@ -24888,7 +24888,7 @@ function (_React$Component) {
             lineNumber: 30
           },
           __self: this
-        }, data.description), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
+        }, Object(_tools_blog__WEBPACK_IMPORTED_MODULE_10__["truncateDescription"])(data.description)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
           className: "details",
           __source: {
             fileName: _jsxFileName,
@@ -24921,7 +24921,7 @@ function (_React$Component) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                return _context.abrupt("return", Object(_tools_blog__WEBPACK_IMPORTED_MODULE_10__["default"])());
+                return _context.abrupt("return", Object(_tools_blog__WEBPACK_IMPORTED_MODULE_10__["loadPosts"])());
 
               case 1:
               case "end":
@@ -24954,7 +24954,7 @@ function (_React$Component) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./hello-world.md": "./posts/hello-world.md"
+	"./01-just-start-and-keep-practicing.md": "./posts/01-just-start-and-keep-practicing.md"
 };
 
 
@@ -24980,16 +24980,16 @@ webpackContext.id = "./posts sync recursive \\.md$";
 
 /***/ }),
 
-/***/ "./posts/hello-world.md":
-/*!******************************!*\
-  !*** ./posts/hello-world.md ***!
-  \******************************/
+/***/ "./posts/01-just-start-and-keep-practicing.md":
+/*!****************************************************!*\
+  !*** ./posts/01-just-start-and-keep-practicing.md ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: Hello world\nthumbnail: /static/img/subway-lines.jpg\ndate: 17 may, 2019\nlength: 4 min read\ncategory: technology\ndescription: Having done a lot of things, I’ve come to the realization that I need to write about things even though I don’t think of myself as such an interesting person. But here I go\n---\nThis is an example post using Markdown\n");
+/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: Just start and keep practicing\nthumbnail: /static/img/subway-lines.jpg\ndate: June 10, 2019\nlength: 2 min read\ncategory: meta\ndescription: \"Like most people, I've always wanted to start blog but would easily get discouraged thinking I'm not as good as other people, or that writing is hard (which is true), and eventually found myself saying: I've always wanted to write, I wish I was good at it.\"\n---\nWhen I was a teenager I had access to a computer connected to the internet and a lot of free time, which helped me develop multiple skills like playing the guitar, develop web applications, design websites and be good at videogames. To most people, that would be a big achievement and they always told me the same thing: I wish I could be as good at <coding / the guitar> as you are.\n\nMy response to them was always the same: just start and keep practicing. I also explained that you start by being bad at something but that's part of the process and with practice you get better and better, but it seemed like they thought I wasn't sharing some secret tip or that I was born with that talent, so they didn't follow my advice and eventually gave up trying.\n\nToday, I'm not as good as a guitarist as I was (because I stopped practicing), but I've been doing software engineering for 11 years and learned a lot of things during this journey, not only on the technical side but also on how to run a company, build technical teams, keep your sanity as a developer, work with people from other disciplines, among other things that I think can be useful to someone else.\n\nLike most people, I've given talks at local meetups, offered tech consultancy to clients and discussed interesting topics with friends over beers, not only as a way to expand my network but mainly because I genuinely enjoy sharing with others. That's why I've always wanted to start blog but would easily get discouraged thinking I'm not as good as other people, or that writing is hard and takes a lot of time (which is true), and eventually found myself saying: I've always wanted to write, I wish I was good at it.\n\nThen I realized I needed to follow the same advice I previously gave to others: just start and keep practicing. I don't need to wait until I'm a great writer or the best engineer in the world, I just have to select a list of topics I want to write about and start doing so. The first articles will probably be bad but that's ok... that's what the practice is for.\n\nSo this is me, following the advice of just starting.\n");
 
 /***/ }),
 
@@ -24997,14 +24997,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************!*\
   !*** ./tools/blog.js ***!
   \***********************/
-/*! exports provided: default */
+/*! exports provided: loadPosts, truncateDescription, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loadPosts", function() { return loadPosts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "truncateDescription", function() { return truncateDescription; });
 /* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gray-matter */ "./node_modules/gray-matter/index.js");
 /* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(gray_matter__WEBPACK_IMPORTED_MODULE_0__);
-
 
 var loadPosts = function loadPosts() {
   var loadedFiles = __webpack_require__("./posts sync recursive \\.md$"); // process them with gray-matter
@@ -25033,8 +25034,25 @@ var loadPosts = function loadPosts() {
     posts: posts
   };
 };
-
+var truncateDescription = function truncateDescription(description) {
+  var limit = 150;
+  description = description.substring(0, limit);
+  description = description.length == limit ? description.trim() + '...' : description;
+  return description;
+};
 /* harmony default export */ __webpack_exports__["default"] = (loadPosts);
+
+/***/ }),
+
+/***/ 0:
+/*!*********************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js!./");
+
 
 /***/ }),
 
@@ -25049,18 +25067,6 @@ var loadPosts = function loadPosts() {
 
 /***/ }),
 
-/***/ 4:
-/*!*********************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js!./");
-
-
-/***/ }),
-
 /***/ "dll-reference dll_6dc2816e14fab51b8269":
 /*!*******************************************!*\
   !*** external "dll_6dc2816e14fab51b8269" ***!
@@ -25072,5 +25078,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map
