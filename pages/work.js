@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 
 const Work = () => (
-  <Layout title="Work">
+  <Layout title="Work" current="work">
 
     <div className="card">
       <div className="container container-big">

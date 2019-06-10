@@ -11,7 +11,7 @@ class Blog extends React.Component {
 
   render() {
     return (
-      <Layout title="Blog">
+      <Layout title="Blog" current="blog">
         <div className="row">
 
           {this.props.posts.map(({ document: { data }, slug }) => {

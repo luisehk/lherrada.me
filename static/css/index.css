@@ -65,6 +65,11 @@ body {
 	text-decoration: none;
 }
 
+.links .current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .main a {
   font-weight: bold;
   color: #000000;
@@ -252,4 +257,8 @@ body {
 	.main {
 		padding-left: 18px;
 	}
+
+  .main .main-title {
+    display: none;
+  }
 }

@@ -17,7 +17,7 @@ class Post extends React.Component {
 
   render() {
     return (
-      <Layout title={this.props.data.title}>
+      <Layout title="Blog" current="blog">
         <div className="card">
     	    <div className="container container-big">
     	      <ReactMarkdown source={this.props.content} />

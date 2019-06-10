@@ -31,10 +31,10 @@ const Layout = props => (
       `}} />
     </Head>
 
-    <Sidebar />
+    <Sidebar current={props.current} />
 
     <div className="main">
-      <p className="main-title">{props.title}</p>
+      { props.title && <p className="main-title">{props.title}</p> }
       <div className="content">{props.children}</div>
     </div>
 
