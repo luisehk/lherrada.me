@@ -2,7 +2,7 @@
 title: Just start and keep practicing
 thumbnail: /static/img/subway-lines.jpg
 date: June 10, 2019
-length: 4 min read
+length: 2 min read
 category: meta
 description: "Like most people, I've always wanted to start blog but would easily get discouraged thinking I'm not as good as other people, or that writing is hard (which is true), and eventually found myself saying: I've always wanted to write, I wish I was good at it."
 ---
