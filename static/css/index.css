@@ -65,6 +65,21 @@ body {
 	text-decoration: none;
 }
 
+.links .current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.main a {
+  font-weight: bold;
+  color: #000000;
+}
+
+.block-link {
+  font-weight: normal !important;
+  text-decoration: none; !important;
+}
+
 .main {
 	padding-left: 256px;
 	padding-top: 36px;
@@ -77,14 +92,9 @@ body {
 	margin: 0;
 }
 
-.main h4 {
+.main h4, .main h3, .main h2, .main h1 {
 	margin: 0;
 	margin-bottom: 18px;
-}
-
-.main a {
-	font-weight: bold;
-	color: #000000;
 }
 
 .main img {
@@ -182,6 +192,17 @@ body {
 	width: 100%;
 }
 
+.post-title {
+  margin-bottom: 0 !important;
+}
+
+.post-thumbnail {
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+  max-width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
 	.portfolio .p-column {
 		flex: calc(50% - 36px);
@@ -210,6 +231,7 @@ body {
 		height: auto;
 		width: auto;
 		padding: 18px;
+    padding-top: 0px;
 
 		text-align: left;
 		font-style: normal;
@@ -220,14 +242,17 @@ body {
 
 	.sidebar .profile {
 		margin-bottom: 9px;
-	}
+  }
 
 	.sidebar .profile .name {
 		margin-bottom: 0px;
 	}
 
 	.sidebar .profile .pic {
-		display: none;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 18px;
 	}
 
 	.sidebar .profile .bio {
@@ -243,4 +268,8 @@ body {
 	.main {
 		padding-left: 18px;
 	}
+
+  .main .main-title {
+    display: none;
+  }
 }
