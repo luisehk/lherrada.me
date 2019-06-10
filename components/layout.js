@@ -4,7 +4,7 @@ import Sidebar from './sidebar'
 const Layout = props => (
   <>
     <Head>
-      <title>Luis Herrada | Software Engineer</title>
+      <title>Luis Herrada | Full Stack Engineer</title>
     	<meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no" />
