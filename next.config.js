@@ -7,6 +7,9 @@ module.exports = {
     return config
   },
   exportPathMap: () => {
+    // here we should use ./tools/blog.loadPosts()
+    // but next.config.js doesnt support babel,
+    // so we need to add posts manually
     const posts = [
       {slug: 'example-post'}
     ]
