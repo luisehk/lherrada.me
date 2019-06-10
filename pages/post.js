@@ -20,7 +20,23 @@ class Post extends React.Component {
       <Layout title="Blog" current="blog">
         <div className="card">
     	    <div className="container container-big">
-    	      <ReactMarkdown source={this.props.content} />
+            <h1 className="post-title">
+              {this.props.data.title}
+            </h1>
+
+            <p className="post-data">
+              {this.props.data.date} | {this.props.data.length}
+              <br />
+              #{this.props.data.category}
+            </p>
+
+            <img
+              className="post-thumbnail"
+              src={this.props.data.thumbnail} />
+
+            <div className="post-content">
+    	       <ReactMarkdown source={this.props.content} />
+            </div>
     	    </div>
     	  </div>
 

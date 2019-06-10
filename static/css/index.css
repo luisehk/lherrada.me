@@ -192,6 +192,17 @@ body {
 	width: 100%;
 }
 
+.post-title {
+  margin-bottom: 0 !important;
+}
+
+.post-thumbnail {
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+  max-width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
 	.portfolio .p-column {
 		flex: calc(50% - 36px);
