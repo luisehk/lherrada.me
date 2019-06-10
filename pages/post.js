@@ -25,9 +25,8 @@ class Post extends React.Component {
             </h1>
 
             <p className="post-data">
-              {this.props.data.date} • {this.props.data.length}
-              <br />
-              #{this.props.data.category}
+              {this.props.data.date} <br />
+              {this.props.data.length}
             </p>
 
             <div className="post-content">
