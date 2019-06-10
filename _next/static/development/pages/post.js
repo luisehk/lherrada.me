@@ -32,7 +32,7 @@ var Layout = function Layout(props) {
       lineNumber: 7
     },
     __self: this
-  }, "Luis Herrada | Software Engineer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+  }, "Luis Herrada | Full Stack Engineer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1, shrink-to-fit=no",
     __source: {
@@ -35211,18 +35211,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 1:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 2:
+/***/ 0:
 /*!*********************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js ***!
   \*********************************************************************************************************/
@@ -35231,6 +35220,17 @@ module.exports = webpackAsyncContext;
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js!./");
 
+
+/***/ }),
+
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 
@@ -35245,5 +35245,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=post.js.map

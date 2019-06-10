@@ -32,7 +32,7 @@ var Layout = function Layout(props) {
       lineNumber: 7
     },
     __self: this
-  }, "Luis Herrada | Software Engineer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+  }, "Luis Herrada | Full Stack Engineer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1, shrink-to-fit=no",
     __source: {
@@ -25044,18 +25044,6 @@ var truncateDescription = function truncateDescription(description) {
 
 /***/ }),
 
-/***/ 0:
-/*!*********************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js!./");
-
-
-/***/ }),
-
 /***/ 1:
 /*!********************!*\
   !*** fs (ignored) ***!
@@ -25064,6 +25052,18 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&a
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+
+/***/ 3:
+/*!*********************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fblog.js!./");
+
 
 /***/ }),
 
@@ -25078,5 +25078,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map
