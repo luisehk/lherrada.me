@@ -25,14 +25,10 @@ class Post extends React.Component {
             </h1>
 
             <p className="post-data">
-              {this.props.data.date} | {this.props.data.length}
+              {this.props.data.date} • {this.props.data.length}
               <br />
               #{this.props.data.category}
             </p>
-
-            <img
-              className="post-thumbnail"
-              src={this.props.data.thumbnail} />
 
             <div className="post-content">
     	       <ReactMarkdown source={this.props.content} />
