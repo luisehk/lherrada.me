@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 
 class Post extends React.Component {
   static async getInitialProps({ query }) {
+    console.log('query', query)
     const post = await import(`../posts/${query.id}.md`)
     const document = matter(post.default)
 
