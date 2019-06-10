@@ -115,7 +115,7 @@ body {
 .row {
 	margin: 0;
 	margin-left: -18px;
-    margin-right: -18px;
+  margin-right: -18px;
 }
 
 .row:after {
@@ -217,6 +217,7 @@ body {
 
 .post-content p {
   margin-bottom: 18px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -282,10 +283,18 @@ body {
 	}
 
 	.main {
-		padding-left: 18px;
+		padding: 0;
 	}
+
+  .card .container-big {
+    padding: 36px;
+  }
 
   .main .main-title {
     display: none;
+  }
+
+  .row {
+    margin: 0;
   }
 }
