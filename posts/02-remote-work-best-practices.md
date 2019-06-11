@@ -3,7 +3,7 @@ id: 2
 title: "Running a remote team"
 thumbnail: /static/img/glitch.png
 date: June 11, 2019
-length: 10 min read
+length: 5 min read
 category: remote
 description: "Many companies are becoming remote-friendly or even remote-first, and that's great news for everybody. The benefits are great: more flexibility in your daily life, no commute, work with world-class teams without having to move to Silicon Valley, etc. But you should also be aware of its challenges and understand it isn't for everybody."
 ---
