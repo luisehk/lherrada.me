@@ -18,7 +18,7 @@ class Post extends React.Component {
     return (
       <Layout title="Blog" current="blog">
         <div className="card">
-    	    <div className="container container-big">
+    	    <div className="container container-big limited-width">
             <h1 className="post-title">
               {this.props.data.title}
             </h1>

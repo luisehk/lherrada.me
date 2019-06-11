@@ -20,18 +20,18 @@ const Sidebar = props => (
         </Link>
       </li>
       <li>
-        <Link href="/work">
-          <a
-            className={props.current == 'work' ? 'current' : ''}>
-            Work
-          </a>
-        </Link>
-      </li>
-      <li>
         <Link href="/blog">
           <a
             className={props.current == 'blog' ? 'current' : ''}>
             Blog
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/work">
+          <a
+            className={props.current == 'work' ? 'current' : ''}>
+            Work
           </a>
         </Link>
       </li>
