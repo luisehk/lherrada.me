@@ -1,4 +1,5 @@
 ---
+id: 1
 title: Just start and keep practicing
 thumbnail: /static/img/subway-lines.jpg
 date: June 10, 2019

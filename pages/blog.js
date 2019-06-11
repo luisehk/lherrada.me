@@ -27,7 +27,7 @@ class Blog extends React.Component {
                   <div className="container">
                     <h4 className="title">{data.title}</h4>
 
-                    <p className="description">{truncateDescription(data.description)}</p>
+                    <p className="description description-fixed-height">{truncateDescription(data.description)}</p>
 
                     <span className="details">
                       {data.date}

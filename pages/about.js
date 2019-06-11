@@ -23,13 +23,15 @@ const About = () => (
       	<h4 className="title">Interests</h4>
 
       	<div className="description">
-          When I’m not working you’ll find me playing the guitar, reading, practicing chess, playing some starcraft
-          or spending time outside with my wife and/or friends.
-        </div>
+          <p>
+            When I’m not working you’ll find me playing the guitar, reading, practicing chess, playing some starcraft
+            or spending time outside with my wife and/or friends.
+          </p>
 
-        <div className="description">
-          I’m also interested in education, business,
-          astronomy, mental health and cooking.
+          <p>
+            I’m also interested in education, business,
+            astronomy, mental health and cooking.
+          </p>
         </div>
 
       	<h4 className="title">Contact</h4>

@@ -28,6 +28,10 @@ export const loadPosts = () => {
       }
     })
 
+    // sort them by most recent
+    data.sort(
+      (a, b) => b.document.data.id - a.document.data.id)
+
     return data
   })(loadedFiles)
 
@@ -37,7 +41,7 @@ export const loadPosts = () => {
 }
 
 export const truncateDescription = (description) => {
-  let limit = 150
+  let limit = 180
   description = description.substring(0, limit)
   description = description.length == limit ? description.trim() + '...' : description
   return description
