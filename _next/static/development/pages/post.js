@@ -35187,6 +35187,10 @@ var map = {
 	"./01-just-start-and-keep-practicing.md": [
 		"./posts/01-just-start-and-keep-practicing.md",
 		1
+	],
+	"./02-remote-work-best-practices.md": [
+		"./posts/02-remote-work-best-practices.md",
+		2
 	]
 };
 function webpackAsyncContext(req) {

@@ -11059,7 +11059,7 @@ var Work = function Work() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!*********************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fwork&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fwork.js ***!
   \*********************************************************************************************************/
@@ -11082,5 +11082,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=work.js.map
