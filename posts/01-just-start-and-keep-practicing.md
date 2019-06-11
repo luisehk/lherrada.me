@@ -7,7 +7,7 @@ length: 2 min read
 category: meta
 description: "Like most people, I've always wanted to start blog but would easily get discouraged thinking I'm not as good as other people, or that writing is hard (which is true), and eventually found myself saying: I've always wanted to write, I wish I was good at it."
 ---
-When I was a teenager I had access to a computer connected to the internet and a lot of free time, which helped me develop multiple skills like playing the guitar, develop web applications, design websites and be good at videogames. To most people, that would be a big achievement and they always told me the same thing: I wish I could be as good at <coding / the guitar> as you are.
+Having a computer connected to the internet and a lot of free time as a teenager, helped me develop multiple skills like playing the guitar, develop web applications, design websites and be good at videogames. To most people, that would be a big achievement and they always told me the same thing: I wish I could be as good at <coding / the guitar> as you are.
 
 My response to them was always the same: just start and keep practicing. I also explained that you start by being bad at something but that's part of the process and with practice you get better and better, but it seemed like they thought I wasn't sharing some secret tip or that I was born with that talent, so they didn't follow my advice and eventually gave up trying.
 
