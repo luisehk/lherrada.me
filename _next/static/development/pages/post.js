@@ -204,40 +204,40 @@ var Sidebar = function Sidebar(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/work",
+    href: "/blog",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: props.current == 'work' ? 'current' : '',
+    className: props.current == 'blog' ? 'current' : '',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: this
-  }, "Work"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, "Blog"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/blog",
+    href: "/work",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: props.current == 'blog' ? 'current' : '',
+    className: props.current == 'work' ? 'current' : '',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, "Blog")))));
+  }, "Work")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Sidebar);
@@ -35091,7 +35091,7 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "container container-big",
+        className: "container container-big limited-width",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21

@@ -216,8 +216,11 @@ body {
 }
 
 .post-content {
-  max-width: 650px;
   font-size: 18px;
+}
+
+.limited-width {
+  max-width: 650px;
 }
 
 .post-content p {
