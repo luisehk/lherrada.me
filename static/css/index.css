@@ -227,6 +227,14 @@ body {
   margin-bottom: 18px;
 }
 
+.post-content code {
+  display: inline-block;
+  font-size: 12px;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .portfolio .p-column {
     flex: calc(50% - 36px);
