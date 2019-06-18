@@ -16,7 +16,7 @@ class Post extends React.Component {
 
   render() {
     return (
-      <Layout title="Blog" current="blog">
+      <Layout title="Blog" current="blog" postTitle={this.props.data.title}>
         <div className="card">
     	    <div className="container container-big limited-width">
             <h1 className="post-title">

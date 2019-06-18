@@ -4,7 +4,7 @@ import Sidebar from './sidebar'
 const Layout = props => (
   <>
     <Head>
-      <title>Luis Herrada | Full Stack Engineer</title>
+      <title>{props.postTitle && `${props.postTitle} | `}Luis Herrada | Full Stack Engineer</title>
     	<meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no" />
