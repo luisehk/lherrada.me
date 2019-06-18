@@ -7,7 +7,7 @@ length: 5 min read
 category: devops
 description: "This is a quick guide on how to setup a sane CI/CD pipeline for your Python project using Gitlab CI and Docker, so you can spend your time on developing new features instead of stressing about fixing errors, merge conflicts and broken deployments."
 ---
-When you're working in a real project with a real team, it's very important to have a development workflow where you spend more time developing actual features instead of constantly fixing broken releases. This is article is a quick guide on how to setup a CI/CD pipeline for your Python project using Gitlab CI and Docker.
+When you're working in a real project with a real team, it's very important to have a development workflow that allows you to spend time developing actual features instead of constantly fixing broken releases. This is article is a quick guide on how to setup a CI/CD pipeline for your Python project using Gitlab CI.
 
 ## Continuous Integration
 Continuous Integration is the practice of integrating the work of a team of developers into a shared repository as frequently as possible. The goal is to detect and fix errors fast instead of waiting for things to pile up. When you're integrating code frequently (and by frequently I mean daily), you're basically de-risking your releases because of a very simple principle: less code to integrate == less things that can go wrong.
@@ -28,9 +28,9 @@ In other words:
 * CD = deploy master frequently to production
 
 ## Automated testing
-When you're adding new code to the repository you **must** add unit or functional tests, this is key for having a sane CI/CD workflow. A lot of beginners think the main benefit is knowing your code works, but the real benefit is that you're making sure if someone breaks your code *in the future* they know about it and fix their code (or your test).
+When you're adding new code to the repository you **must** add unit or functional tests, this is key for having a sane CI/CD workflow. A lot of beginners think the main benefit of testing is knowing your code works, but the real benefit is that you're making sure if someone breaks your code *in the future* they know about it and fix their code (or your test).
 
-This is why automated testing is so important, because if you're doing frequent integrations you need to make sure you're not breaking anything *every single time*.
+This is why automated testing is so important, because if you're doing frequent integrations you need to make sure you're not breaking anything *every single time*. I won't cover unit and functional testing in this article, but if you want to get started with test-driven development you should start reading [Obey the testing goat!](https://www.obeythetestinggoat.com/).
 
 ## Gitlab CI
 In this guide I use Gitlab CI to execute the pipeline everytime a branch is merged into master, but you're free to use a different service like CircleCI, TravisCI or Codeship.
