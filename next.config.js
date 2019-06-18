@@ -11,6 +11,7 @@ module.exports = {
     // but next.config.js doesnt support babel,
     // so we need to add posts manually
     const posts = [
+      {slug: '03-sane-cicd-setup-python'},
       {slug: '02-remote-work-best-practices'},
       {slug: '01-just-start-and-keep-practicing'}
     ]
