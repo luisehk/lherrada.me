@@ -1,0 +1,17 @@
+webpackHotUpdate("static/development/pages/blog.js",{
+
+/***/ "./posts/03-sane-cicd-setup-python.md":
+/*!********************************************!*\
+  !*** ./posts/03-sane-cicd-setup-python.md ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("---\nid: 3\ntitle: \"A sane CI/CD setup for Python\"\nthumbnail: /static/img/hack-capital.jpg\ndate: June 14, 2019\nlength: 5 min read\ncategory: devops\ndescription: \"This is a quick guide on how to setup a sane CI/CD pipeline for your Python project using Gitlab CI and Docker, so you can spend your time on developing new features instead of stressing about fixing errors, merge conflicts and broken deployments.\"\n---\nWhen you're working in a real project with a real team, it's very important to have a development workflow where you spend more time developing actual features instead of constantly fixing broken releases. This is article is a quick guide on how to setup a CI/CD pipeline for your Python project using Gitlab CI and Docker.\n\n## Continuous Integration\nContinuous Integration is the practice of integrating the work of a team of developers into a shared repository as frequently as possible. The goal is to detect and fix errors fast instead of waiting for things to pile up. When you're integrating code frequently (and by frequently I mean daily), you're basically de-risking your releases because of a very simple principle: less code to integrate == less things that can go wrong.\n\nThe key practices to do CI successfully are:\n* Integrate small and atomic branches into a shared repository\n* Before integrating, the entire application should be tested automatically\n* Everytime a branch is integrated, it should be built automatically\n* When the release is built, it should deploy automatically to a staging server\n\nIn other words: you should iterate fast and automate your process.\n\n## Continuous Delivery\nContinuous Delivery on the other hand is the practice of deploying your code to production as frequently as possible, with the goal of reducing the possibilities of something going wrong when releasing new features or bug fixes. Ideally, deployment should be done automatically.\n\nIn other words:\n* CI = merge frequently into master\n* CD = deploy master frequently to production\n\n## Automated testing\nWhen you're adding new code to the repository you **must** add unit or functional tests, this is key for having a sane CI/CD workflow. A lot of beginners think the main benefit is knowing your code works, but the real benefit is that you're making sure if someone breaks your code *in the future* they know about it and fix their code (or your test).\n\nThis is why automated testing is so important, because if you're doing frequent integrations you need to make sure you're not breaking anything *every single time*.\n\n## Gitlab CI\nIn this guide I use Gitlab CI to execute the pipeline everytime a branch is merged into master, but you're free to use a different service like CircleCI, TravisCI or Codeship.\n\n\n\n\n");
+
+/***/ })
+
+})
+//# sourceMappingURL=blog.js.b072b0ed5f1d365d8060.hot-update.js.map

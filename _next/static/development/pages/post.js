@@ -13978,7 +13978,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 1);
+const fs = __webpack_require__(/*! fs */ 3);
 const sections = __webpack_require__(/*! section-matter */ "./node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "./node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "./node_modules/gray-matter/lib/stringify.js");
@@ -35191,6 +35191,10 @@ var map = {
 	"./02-remote-work-best-practices.md": [
 		"./posts/02-remote-work-best-practices.md",
 		2
+	],
+	"./03-sane-cicd-setup-python.md": [
+		"./posts/03-sane-cicd-setup-python.md",
+		3
 	]
 };
 function webpackAsyncContext(req) {
@@ -35215,7 +35219,18 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 0:
+/***/ 3:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 4:
 /*!*********************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js ***!
   \*********************************************************************************************************/
@@ -35224,17 +35239,6 @@ module.exports = webpackAsyncContext;
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost&absolutePagePath=%2Fusr%2Fsrc%2Fapp%2Fpages%2Fpost.js!./");
 
-
-/***/ }),
-
-/***/ 1:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -35249,5 +35253,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=post.js.map
