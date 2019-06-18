@@ -35,6 +35,15 @@ This is why automated testing is so important, because if you're doing frequent 
 ## Gitlab CI
 In this guide I use Gitlab CI to execute the pipeline everytime a branch is merged into master, but you're free to use a different service like CircleCI, TravisCI or Codeship.
 
+Think about a CI/CD pipeline as a set of jobs or commands that we execute everytime a new branch is being merged into master. In this guide we are running five jobs in the following order:
+
+1. **flake8**: this is a code analyzer to enforce code style rules like the pep8 specification.
+2. **radon**: this is a Python tool to determine the cyclomatic complexity of our code. If our code is too complex, this stage will throw an alert and fail.
+3. **bandit**: this tool analyzes our code to find common security issues.
+4. **our test suite**: here we run our test suite. This is where we make sure our code works and it didn't break existing functionality.
+5. **deploy to staging**: when everything is fine we deploy to a staging server, which should be an up-to-date copy of production.
+
+
 ```
 image: python:3.6
 
