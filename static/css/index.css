@@ -159,7 +159,7 @@ body {
 }
 
 .card .container .description-fixed-height {
-  height: 90px;
+  min-height: 90px;
 }
 
 .card .container .description p {
