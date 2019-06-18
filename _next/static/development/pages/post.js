@@ -32,7 +32,7 @@ var Layout = function Layout(props) {
       lineNumber: 7
     },
     __self: this
-  }, "Luis Herrada | Full Stack Engineer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+  }, props.postTitle && "".concat(props.postTitle, " | "), "Luis Herrada | Full Stack Engineer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1, shrink-to-fit=no",
     __source: {
@@ -35078,6 +35078,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
         title: "Blog",
         current: "blog",
+        postTitle: this.props.data.title,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
