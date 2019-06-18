@@ -32,18 +32,82 @@ When you're adding new code to the repository you **must** add unit or functiona
 
 This is why automated testing is so important, because if you're doing frequent integrations you need to make sure you're not breaking anything *every single time*. I won't cover unit and functional testing in this article, but if you want to get started with test-driven development you should start reading [Obey the testing goat!](https://www.obeythetestinggoat.com/).
 
-## Gitlab CI
+## Pipeline stages
 In this guide I use Gitlab CI to execute the pipeline everytime a branch is merged into master, but you're free to use a different service like CircleCI, TravisCI or Codeship.
 
-Think about a CI/CD pipeline as a set of jobs or commands that we execute everytime a new branch is being merged into master. In this guide we are running five jobs in the following order:
+Think about a CI/CD pipeline as a set of jobs or stages that we execute everytime a new branch is being merged into master. In this guide we are running five stages: three for static code analysis, one for our test suite and one more to deploy our new release.
 
-1. **flake8**: this is a code analyzer to enforce code style rules like the pep8 specification.
-2. **radon**: this is a Python tool to determine the cyclomatic complexity of our code. If our code is too complex, this stage will throw an alert and fail.
-3. **bandit**: this tool analyzes our code to find common security issues.
-4. **our test suite**: here we run our test suite. This is where we make sure our code works and it didn't break existing functionality.
-5. **deploy to staging**: when everything is fine we deploy to a staging server, which should be an up-to-date copy of production.
+#### 1. Flake8
+This is a code analyzer to enforce code style rules like the pep8 specification. Running this is very straightforward:
+```
+flake8 --exclude='.git,venv,*migrations*,static/lib'
+```
+
+If everything is great no output will be returned and the pipeline job will succeed, but if there are errors it will print something like this and return 1 as the exit code.
+
+![flake8 results](/static/img/cicd-python/flake8.png)
+
+#### 2. Radon
+This is a Python tool to determine the cyclomatic complexity of our code, which means that this stage will throw an alert and fail if our code became too complex.
+
+```
+radon cc -s -a --ignore='venv' .
+radon mi -s --ignore='venv' .
+```
+
+![cyclomatic complexity](/static/img/cicd-python/cc.jpg)
 
 
+#### 3. Bandit
+This is a tool originally developed by the OpenStack Security Project, it analyzes our code to find common security issues such as:
+* Use of assert
+* Hardcoded passwords
+* SQL injection
+* Binding to all interfaces
+* Weak cryptography
+* And many others
+
+You can run bandit like this:
+
+```
+bandit -r --exclude='venv' .
+```
+
+You can expect something like this if a vulnerability is found:
+
+![bandit](/static/img/cicd-python/bandit.png)
+
+
+#### 4. The test suite
+After all of the static analysis stages pass, it makes sense to run our test suite to see if we broke something.
+
+```
+python manage.py test -k -v 2
+```
+
+![pytest](/static/img/cicd-python/pytest.png)
+
+#### 5. Deployment
+This is stage in particular deserves its own blog post because it is an extensive topic, there are a lot of strategies and you should take your time to choose the approach that suits you best.
+
+First, you have to decide: do you want to PUSH your release from the CI server to your server? or do you want your server to PULL your release whenever it is ready?
+
+For a push strategy, you can:
+* Use [dpl](https://docs.gitlab.com/ee/ci/examples/deployment/) for Heroku
+* Use [sshpass](https://www.cyberciti.biz/faq/noninteractive-shell-script-ssh-password-provider/) to remotely execute commands on your server
+* Build a push a Docker image to the Docker Registry and update your containers from whatever you're using (Rancher / k8s)
+
+For a pull strategy, you can:
+* Have a cronjob that pulls your changes from Git and executes build.sh when it detects a new release.
+
+## Gitlab CI
+Now that you understand the idea behind CI pipelines and their stages, you just need to automate it. We can use Gitlab CI for this and instead of duplicating [their official documentation](https://docs.gitlab.com/ee/ci/), I'll just an example of a .gitlab-ci.yml file that you can use for your project. Notice how I:
+* Establish what folders to cache between stages so I don't have to install the pip requirements everytime
+* Specify which image to run my pipeline on. Gitlab CI uses Docker for this.
+* Install the chrome driver to run Selenium for my functional tests, but only on my test stage.
+* Specify how Gitlab can retrieve the test coverage (reported by coverage.py)
+
+.gitlab-ci.yml:
 ```
 image: python:3.6
 
@@ -53,7 +117,7 @@ services:
 
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
-  POSTGRES_DB: publicomex
+  POSTGRES_DB: myproject
 
 cache:
   untracked: true
@@ -67,7 +131,7 @@ before_script:
   - pip install virtualenv
   - virtualenv venv
   - source venv/bin/activate
-  - pip install -r docker/python/requirements.txt
+  - pip install -r requirements.txt
 
 stages:
   - pep8
@@ -82,7 +146,7 @@ pep8:
       - .cache/pip
       - venv
   script:
-    - flake8 --exclude='.git,venv,*migrations*,webapps/canvas,static/lib' .
+    - flake8 --exclude='.git,venv,*migrations*,static/lib' .
 
 radon:
   stage: radon
@@ -130,4 +194,5 @@ test:
 
 ```
 
-
+## Conclusion
+More than a tool, CI/CD is a set of tools and practices to allow your team be more productive and focus on the fun and creative parts of the job. Adopting CI/CD is the first step into reducing risks on your releases and quickly adapting to business requirements and user needs.
