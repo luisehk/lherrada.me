@@ -194,5 +194,8 @@ test:
 
 ```
 
+With this, Gitlab CI will run your CI pipeline everytime a change is pushed and the result will look something like this:
+![gitlab-ci](/static/img/cicd-python/gitlab-ci.png)
+
 ## Conclusion
 More than a tool, CI/CD is a set of tools and practices to allow your team be more productive and focus on the fun and creative parts of the job. Adopting CI/CD is the first step into reducing risks on your releases and quickly adapting to business requirements and user needs.
